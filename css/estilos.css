@@ -1,4 +1,4 @@
-/*---------------ELEMENTOS---------------*/
+/*---------------INDEX.HTML---------------*/
 body{
 	color: #333333;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -164,6 +164,11 @@ header{
 	width: 140px;
 	margin: 2px;
 	padding-bottom: 10px;
+}
+
+.painel li:hover{
+	box-shadow: 0 0 5px #333;
+	transition: box-shadow 0.7s;
 }
 
 .sacola{
