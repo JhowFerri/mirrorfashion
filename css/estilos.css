@@ -100,8 +100,6 @@ header{
 	background-color: #DCDCDC;
 }
 
-
-
 .menu-opcoes{
 	position: absolute;
 	bottom: 0;
@@ -164,11 +162,18 @@ header{
 	width: 140px;
 	margin: 2px;
 	padding-bottom: 10px;
+	transition: 0.7s ease-out;
 }
 
 .painel li:hover{
+	background-color: rgba(255,255,255,0.8);
 	box-shadow: 0 0 5px #333;
-	transition: box-shadow 0.7s;
+	transition: 0.7s ease-in;
+	transform: scale(1.2) rotate(-5deg);
+}
+
+.painel li:nth-child(2n):hover {
+	transform: scale(1.2) rotate(5deg);
 }
 
 .sacola{
@@ -213,4 +218,51 @@ header{
 .social li{
 	float: left;
 	margin-left: 25px;
+}
+
+/* ----------------------------- dispositivos com menos de 320px ----------------------------*/
+@media (max-width: 939px){
+	.busca, .menu-departamentos, .banner-destaque img{
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.container{
+		width: 96%;
+	}
+
+	header h1{
+		text-align: center;
+	}
+
+	header h1 img{
+		max-width: 50%;
+	}
+
+	.menu-opcoes{
+		position: static;
+		text-align: center;
+	}
+
+	.menu-opcoes ul li{
+		display: inline-block;
+		margin: 5px;
+	}
+
+	.painel{
+		width: auto;
+	}
+
+	.painel img{
+		width: 100%;
+	}
+
+	.painel li{
+		width: 30%;
+	}
+
+	.sacola{
+		display: none;
+	}
+
 }
