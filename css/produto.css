@@ -24,6 +24,13 @@
 	box-sizing: border-box;
 	position: absolute;
 	top: 30px;
+	border: 6px solid rgba(0,0,0,0);
+	transition: 1s;
+	cursor: pointer;
+}
+
+.cores label:hover::after{
+	border: 6px solid rgba(0,0,0,0.1);
 }
 
 .cores label img{
@@ -35,6 +42,18 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+.comprar{
+	background: #91bd3c;
+	border: none;
+	color: #333;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	box-shadow: 0 1px 3px #777;
+	display: block;
+	padding: 0.5em 1em;
+	margin: 1em 0;
 }
 
 label[for="verde"]::after{
